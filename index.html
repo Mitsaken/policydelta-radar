@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src https://conversionlogic-waitlist.conversionlogic.workers.dev; base-uri 'none'; form-action 'self' https://conversionlogic-waitlist.conversionlogic.workers.dev">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="TbQiOlV9inpmQskmAp9DLlirtIKnQA6jMJTxacC56JY" />
+  <meta name="robots" content="index, follow" />
+  <title>PolicyDelta Radar — Terms of Service &amp; Privacy Policy Redline Diff Tool</title>
+  <meta name="description" content="Free local-first Terms of Service, Privacy Policy, and EULA redline comparison utility. Detect AI model training clauses, forced binding arbitration, data broker sharing, and invisible Unicode obfuscation in browser memory." />
+  <link rel="canonical" href="https://mitsaken.github.io/policydelta-radar/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Conversionlogic" />
+  <meta property="og:title" content="PolicyDelta Radar — Terms &amp; Privacy Policy Redline Diff Tool" />
+  <meta property="og:description" content="Compare Terms of Service and Privacy Policy revisions locally in browser memory. Spot AI training clauses, arbitration waivers, retention shifts, and Unicode obfuscation instantly." />
+  <meta property="og:url" content="https://mitsaken.github.io/policydelta-radar/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="PolicyDelta Radar — Terms &amp; Privacy Policy Diff Tool" />
+  <meta name="twitter:description" content="Client-side clause comparison utility for Terms of Service, Privacy Policies, and vendor EULAs." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "PolicyDelta Radar",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "url": "https://mitsaken.github.io/policydelta-radar/",
+        "description": "Local-first pattern-matching and clause redline comparison utility for English-language Terms of Service, Privacy Policies, and EULAs.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Conversionlogic"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are vendor Terms or NDA policy texts uploaded when I compare them in PolicyDelta Radar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Policy normalization, Unicode sanitization, clause segmentation, and redline comparison execute 100% inside your browser memory with zero third-party or backend document transmission."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What clause categories and evasion patterns does PolicyDelta Radar scan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It evaluates 7 core English-language categories including forced binding arbitration, AI model training licenses, unilateral modifications, indefinite data retention, third-party ad sharing, auto-renewal escalation, and GDPR/CCPA user-protection enhancements, alongside invisible zero-width Unicode spoofing and hedged phrasing triggers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included in the free web tool vs PolicyDelta Radar Pro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The free browser workbench and cli.js audit English policies using 7 core rules with Markdown, JSON, and A4 print outputs. PolicyDelta Radar Pro (planned 19 EUR one-time launch price, currently 0 EUR Priority Waitlist) adds a Custom YAML Rule-Pack CLI (legalops-cli.js), 3 ready-to-edit YAML packs (SaaS Enterprise, GDPR EU Strict, AI-IP Protection), standalone printable HTML redline memo exports, and Git snapshot CI workflows."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="site-header no-print">
+    <div class="header-inner">
+      <div class="brand-lockup">
+        <a href="#" class="brand-title">PolicyDelta Radar</a>
+        <span class="brand-subtitle">Terms &amp; Privacy Redline Comparison · Local Browser Memory</span>
+      </div>
+      <a href="#pro-waitlist" class="btn btn-secondary btn-sm">LegalOps CLI (Waitlist)</a>
+    </div>
+  </header>
+
+  <main class="memo-main">
+
+    <!-- SUBMISSION FORM -->
+    <section class="submission-card no-print" aria-label="Policy text comparison">
+      <div>
+        <span class="kicker">Legal &amp; Privacy Clause Redline</span>
+        <h1 class="memo-h1">Compare Terms of Service &amp; Privacy Policy Revisions</h1>
+        <p class="memo-lead">
+          Instead of skimming 40-page vendor agreements or leaking confidential contracts to cloud chatbots — detect AI training ingestion, forced arbitration, and hidden Unicode obfuscation locally in browser memory.
+        </p>
+      </div>
+
+      <div class="samples-row">
+        <span>Load illustrative simulation:</span>
+        <button type="button" class="text-action" data-preset="saas_ai_ingestion">AI training &amp; arbitration update</button>
+        <button type="button" class="text-action" data-preset="predatory_arbitration">Unilateral terms &amp; arbitration trap</button>
+        <button type="button" class="text-action" data-preset="gdpr_friendly_update">GDPR rights expansion</button>
+      </div>
+
+      <div class="editors-grid">
+        <div class="editor-col">
+          <div class="editor-head">
+            <label for="basePolicyInput" class="editor-label">Base Policy (v1 / Baseline)</label>
+            <label for="fileBasePolicy" class="text-action pointer">Load .txt / .md</label>
+            <input type="file" id="fileBasePolicy" accept=".txt,.md,.html" hidden />
+          </div>
+          <textarea id="basePolicyInput" class="policy-textarea" rows="9" placeholder="Paste baseline Terms or Privacy Policy text..."></textarea>
+        </div>
+
+        <div class="editor-col">
+          <div class="editor-head">
+            <label for="targetPolicyInput" class="editor-label">Target Policy (v2 / Updated Version)</label>
+            <label for="fileTargetPolicy" class="text-action pointer">Load .txt / .md</label>
+            <input type="file" id="fileTargetPolicy" accept=".txt,.md,.html" hidden />
+          </div>
+          <textarea id="targetPolicyInput" class="policy-textarea" rows="9" placeholder="Paste updated Terms or Privacy Policy text..."></textarea>
+        </div>
+      </div>
+
+      <div class="submit-bar">
+        <div class="btn-group-wrap">
+          <button type="button" id="runCompareBtn" class="btn btn-primary">Generate Redline Memo</button>
+          <button type="button" id="clearPoliciesBtn" class="btn btn-secondary">Clear</button>
+        </div>
+        <span class="muted-xs">Processed in browser memory · Zero documents transmitted externally</span>
+      </div>
+    </section>
+
+    <!-- EMPTY NOTE -->
+    <div id="emptyStateBanner" class="callout empty-banner-box no-print">
+      <strong>Ready for comparison:</strong> Paste two policy revisions above (or select an illustrative simulation) and click <em>Generate Redline Memo</em> to review substantive clause changes.
+    </div>
+
+    <!-- REDLINE MEMO OUTPUT -->
+    <article id="resultsSection" class="memo-sheet" hidden aria-label="Redline memo output">
+
+      <div id="sampleDemoBanner" class="callout callout-sample no-print" hidden>
+        <strong>Illustrative Sample Simulation:</strong> Reviewing built-in demonstration text. Paste your own vendor agreements above to analyze live contracts.
+      </div>
+
+      <div class="memo-head-bar">
+        <div>
+          <span class="kicker">Redline Comparison Memorandum</span>
+          <h2 id="memoVerdictHeading" class="memo-h1 memo-sub-h2">Substantive Clause Review</h2>
+          <p id="summaryText" class="memo-lead mt-1">Heuristic pattern scan across legal recourse, AI model training rights, retention, and GDPR rights.</p>
+        </div>
+        <div class="no-print export-row">
+          <button type="button" id="btn-copy-md" class="btn btn-secondary btn-sm">Copy Changelog</button>
+          <button type="button" id="btn-dl-json" class="btn btn-secondary btn-sm">Export JSON</button>
+          <button type="button" id="btn-print-memo" class="btn btn-primary btn-sm">Print A4 Memo</button>
+        </div>
+      </div>
+
+      <!-- Scope & Verification Callout -->
+      <div class="callout callout-scope">
+        <strong>Scope &amp; Verification:</strong> Heuristic pattern rules evaluate English-language agreements across 7 core categories. Non-English contracts and ambiguous negations require manual human reading and independent verification.
+      </div>
+
+      <!-- Risk Category Tally (5-box 3-state grid) -->
+      <div class="memo-tally-grid tnum">
+        <div class="tally-box">
+          <div class="tally-label">Audit Date</div>
+          <div id="memoDateValue" class="tally-num tally-date">--</div>
+        </div>
+        <div class="tally-box">
+          <div class="tally-label">Critical Shifts</div>
+          <div id="statCriticalCount" class="tally-num is-fail">0</div>
+        </div>
+        <div class="tally-box">
+          <div class="tally-label">Privacy Warnings</div>
+          <div id="statWarningCount" class="tally-num is-warn">0</div>
+        </div>
+        <div class="tally-box">
+          <div class="tally-label">Human Review</div>
+          <div id="statReviewCount" class="tally-num is-review">0</div>
+        </div>
+        <div class="tally-box">
+          <div class="tally-label">User Protections</div>
+          <div id="statFriendlyCount" class="tally-num is-pass">0</div>
+        </div>
+      </div>
+
+      <!-- Substantive Changes Table -->
+      <section class="memo-block">
+        <h3 class="memo-section-title">1. Substantive Policy Mutations (<span id="findingsCountBadge" class="tnum">0 changes</span>)</h3>
+        <div class="changes-table-wrap">
+          <table class="changes-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Severity</th>
+                <th>Category</th>
+                <th>Clause Finding</th>
+                <th>Practical Implication</th>
+              </tr>
+            </thead>
+            <tbody id="findingsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Inline Textual Redline Excerpts -->
+      <section class="memo-block">
+        <h3 class="memo-section-title">2. Inline Clause Diff Excerpts</h3>
+        <div id="redlineContainer" class="redline-stack"></div>
+      </section>
+
+      <div class="memo-disclaimer">
+        Disclaimer: PolicyDelta Radar is an automated pattern-matching and text-comparison utility providing heuristic indicators for informational review only.
+      </div>
+    </article>
+
+  </main>
+
+  <!-- STATIC WAITLIST SECTION (0-EUR VALIDATION MODE) -->
+  <section id="pro-waitlist" class="waitlist-section no-print" aria-labelledby="waitlist-heading">
+    <div class="waitlist-card">
+      <div>
+        <span class="kicker">Upcoming Release · Waitlist</span>
+        <div><span class="price-badge-pill">Planned launch price: 19 € (one-time, VAT incl.) · 0 € today — Priority Waitlist</span></div>
+        <h2 id="waitlist-heading" class="waitlist-title">PolicyDelta Radar Pro — Custom YAML Rule-Pack &amp; LegalOps Toolkit (Waitlist)</h2>
+        <p class="waitlist-desc">
+          The free browser redline workbench runs locally with zero registration. Join the validation waitlist if your compliance or procurement team needs customizable rule packs and offline reporting (zero charge today):
+        </p>
+        <ul class="waitlist-features">
+          <li>Custom YAML Rule-Pack CLI (<span class="mono">legalops-cli.js</span>) merging your organization's custom clause patterns with the core 7 detectors (<span class="mono">--fail-on-critical</span>).</li>
+          <li>Three ready-to-edit YAML packs: <span class="mono">saas_enterprise_pack.yaml</span>, <span class="mono">gdpr_eu_strict_pack.yaml</span>, and <span class="mono">ai_ip_protection_pack.yaml</span>.</li>
+          <li>Standalone printable HTML redline memo exporter (<span class="mono">--format html</span>) + git-tracked vendor snapshot diff CI workflow template.</li>
+        </ul>
+      </div>
+
+      <form id="proWaitlistForm" class="waitlist-form" data-project="policydelta-radar" novalidate>
+        <label for="proWaitlistAdvice" class="field-label">Primary workflow need (optional)</label>
+        <select id="proWaitlistAdvice" class="field-input">
+          <option value="custom_yaml_packs">Editable YAML rule packs (SaaS / GDPR / AI-IP)</option>
+          <option value="printable_html_redline">Standalone printable HTML redline memo CLI</option>
+          <option value="git_snapshot_ci">Git-tracked vendor snapshot diff CI workflow</option>
+        </select>
+        <label for="proWaitlistEmail" class="field-label">Notify email (zero charge or obligation)</label>
+        <div class="waitlist-input-row">
+          <input type="email" id="proWaitlistEmail" class="field-input" placeholder="team@company.com" required />
+          <button type="submit" id="proWaitlistSubmit" class="btn btn-primary">Join Waitlist</button>
+        </div>
+        <label class="waitlist-consent">
+          <input type="checkbox" id="proWaitlistConsent" required />
+          <span>I explicitly consent to receive a one-time notification when PolicyDelta Radar Pro launches, in line with the <a href="privacy.html">Privacy &amp; Legal Notice</a> (GDPR Art. 6(1)(a), opt out anytime).</span>
+        </label>
+        <p id="proWaitlistMsg" class="waitlist-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section no-print" aria-label="Frequently Asked Questions">
+    <div class="faq-card">
+      <h2 class="faq-heading">Frequently Asked Questions (Policy Redline &amp; Clause Comparison)</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Are vendor Terms or NDA policy texts uploaded when I compare them in PolicyDelta Radar?</summary>
+          <p>No. Policy normalization, Unicode sanitization, clause segmentation, and redline comparison execute 100% inside your browser memory with zero third-party or backend document transmission.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What clause categories and evasion patterns does PolicyDelta Radar scan?</summary>
+          <p>It evaluates 7 core English-language categories including forced binding arbitration, AI model training licenses, unilateral modifications, indefinite data retention, third-party ad sharing, auto-renewal escalation, and GDPR/CCPA user-protection enhancements, alongside invisible zero-width Unicode spoofing and hedged phrasing triggers.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is included in the free web tool vs PolicyDelta Radar Pro?</summary>
+          <p>The free browser workbench and <span class="mono">cli.js</span> audit English policies using 7 core rules with Markdown, JSON, and A4 print outputs. PolicyDelta Radar Pro (planned 19 EUR one-time launch price, currently 0 EUR Priority Waitlist) adds a Custom YAML Rule-Pack CLI (<span class="mono">legalops-cli.js</span>), 3 ready-to-edit YAML packs (SaaS Enterprise, GDPR EU Strict, AI-IP Protection), standalone printable HTML redline memo exports, and Git snapshot CI workflows.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer no-print">
+    <nav class="footer-tools-nav" aria-label="Conversionlogic Developer and Audit Suite">
+      <strong>Conversionlogic Suite:</strong>
+      <a class="footer-tool-link" href="https://mitsaken.github.io/refintegrity/" target="_blank" rel="noopener noreferrer">RefIntegrity</a>
+      <a class="footer-tool-link" href="https://mitsaken.github.io/api-drift-sentinel/" target="_blank" rel="noopener noreferrer">API Drift Sentinel</a>
+      <a class="footer-tool-link" href="https://scopekit-gr.pages.dev/" target="_blank" rel="noopener noreferrer">ScopeKit GR</a>
+      <a class="footer-tool-link" href="https://eshop-compliance-doctor.pages.dev/" target="_blank" rel="noopener noreferrer">eShop Compliance Audit</a>
+      <a class="footer-tool-link" href="https://greek-procurement-radar.pages.dev/" target="_blank" rel="noopener noreferrer">Greek Procurement Radar</a>
+      <a class="footer-tool-link" href="https://espa-screener-gr.pages.dev/" target="_blank" rel="noopener noreferrer">ESPA Screener</a>
+      <a class="footer-tool-link" href="https://athens-rental-monitor.pages.dev/" target="_blank" rel="noopener noreferrer">Athens Rental Monitor</a>
+      <a class="footer-tool-link" href="https://athens-relocation-matrix.pages.dev/" target="_blank" rel="noopener noreferrer">Athens Expat Matrix</a>
+      <a class="footer-tool-link" href="https://praktika-gr.pages.dev/" target="_blank" rel="noopener noreferrer">Praktika GR</a>
+    </nav>
+    <div class="footer-inner">
+      <span><strong>PolicyDelta Radar</strong> · Conversionlogic · <a href="privacy.html" class="footer-tool-link">Privacy &amp; Legal Notice</a> · Updated: 2026-11-19</span>
+      <span>100% browser memory · Automated pattern-matching and text-comparison utility for informational review only · 0€ Validation Mode</span>
+    </div>
+  </footer>
+
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
